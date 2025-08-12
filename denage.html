@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFMN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            position: relative;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #e0e0e0;
+            font-size: 1.5rem;
+            text-decoration: none;
+            z-index: 100;
+            transition: color 0.3s ease;
+        }
+
+        .back-button:hover {
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+            padding-top: 10px; /* Added to account for fixed back button */
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .credits {
+            display: block;
+            margin-top: 1.2rem;
+            font-size: 0.9em;
+            font-weight: normal;
+            color: #bbb; /* Subtle gray for credits */
+            line-height: 1.6;
+        }
+
+        .role {
+            font-weight: 600;
+            color: #fff; /* Highlight roles */
+        }
+
+        h2 {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+
+        .gallery {
+            column-count: 4;
+            column-gap: 30px;
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .pin {
+            display: inline-block;
+            margin-bottom:30px;
+            break-inside: avoid;
+            background-color: #1e1e1e;
+            border-radius: 0px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pin:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .pin img {
+            width: 100%;
+            display: block;
+        }
+
+        @media (max-width: 1200px) {
+            .gallery {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                column-count: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <header>
+        <h1>DENAGE COLLECTION</h1>
+
+        <h2>
+            A visual journey blending surreal landscapes with urban energy. 
+            <br>This project reimagines cityscapes through experimental long-exposure photography and digital collage.
+            
+            <div class="credits">
+                <span class="role">Photography:</span> @dark.ink.paper  
+                | <span class="role">Creative Direction:</span> @alexandradng  
+                | <span class="role">Make-up:</span> @anjarahelisoalandiy & @anjara_signature  
+                | <span class="role">Models:</span> @j.ching.ching, @larah9371, @lukasss_rd
+            </div>
+        </h2>
+    </header>
+
+    <div class="gallery">
+        <!-- Pin 1 -->
+        <div class="pin">
+            <img src="images/denage1.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage2.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage3.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage4.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage5.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage6.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage7.jpg" alt="Mountain landscape">
+        </div>
+        <div class="pin">
+            <img src="images/denage8.jpg" alt="Mountain landscape">
+        </div>
+    </div>
+</body>
+</html>
